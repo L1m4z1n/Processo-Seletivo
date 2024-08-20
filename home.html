@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" href="estilos/mediaquery.css">n
+
+    <title>Processo Seletivo</title>
+</head>
+<body>
+    <header>
+        <menu id="comeco">
+            <ul>
+                <li><a href="#">Ir para conteúdo</a></li>
+                <li><a href="#">Ir para menu</a></li>
+                <li><a href="#">A+</a></li>
+                <li><a href="#">A-</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">contrast</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">
+                    sign_language
+                    </span>Libras</a></li>
+                <li><a href="#">Acessibilidade</a></li>
+            </ul>
+        </menu>
+
+
+        <nav>
+            <h1><span class="material-symbols-outlined">menu</span>Tribunal Regional Federal da 2ºRegião</h1>
+
+            <aside id="menu_lateral">
+                <input type="text" name="pesquisa" id="pesquisa">
+                <ul>
+                    <li><a href="#">Entrar no Sistema</a></li>
+                    <li><a href="#">Acessibilidade</a></li>
+                    <li><a href="#">Cadastre-se AQUI!<span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                        </span></a></li>
+                    <li><a href="#">Consulta Autenticidade de Certidões<span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                        </span></a></li>
+                    <li><a href="#">Consulta Autenticidade de Documentos</a></li>
+                    <li><a href="#">Consulta Pública de Precatórios</a></li>
+                    <li><a href="#">Consulta Pública de Processos</a></li>
+                    <li><a href="#">Consulta de Documentos por Chave</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Fórum de Conciliação</a></li>
+                    <li><a href="#">Legislação</a></li>
+                    <li><a href="#">Lista Pública de Peritos</a></li>
+                </ul>
+            </aside>
+        </nav>
+    </header>
+
+    
+
+    <div id="formulario">
+        <article>
+            <section>
+                <h1 id="consulta">Consulta Processual - Busca de Processo</h1>
+                <form action="haha.php" method="get">
+                   
+                        
+                        <p>Nº Processo: <br>
+                            <input type="text" name="numero_processo" id="numero_processo">
+                        </p>
+                   
+                    
+                    <p id="chave_processo">Chave do processo:<br>
+                        <input type="text" name="chave_processo" id="chave_processo">
+                    </p>
+                    <p>Ou</p>
+                    <p>Chave Documento:<br>
+                        <input type="text" name="chave_documento" id="chave_documento">
+                    </p><br>
+
+                    <p>Nome da Parte: (Somente pessoa fisica ou jurídica)<br>
+                        <input type="text" name="nome_da_parte" id="nome_da_parte">
+                        <input type="checkbox" name="pesquisa_fonetica" id="pesquisa_fonetica">
+                        <label for="pesquisa_fonetica"></label>
+                        Pesquisa Fonética
+                    </p>
+
+                    <p>
+                        OAB:
+                        <input type="text" name="oab" id="oab">
+                    </p>
+
+                    <input type="radio" name="pessoa_fisica" id="pessoa_fisica">
+                    <label for="pessoa_fisica"></label>
+                    Pessoa Física
+
+                    <input type="radio" name="pessoa_juridica" id="pessoa_juridica">
+                    <label for="pessoa_juridica"></label>
+                    Pessoa Jurídica
+
+                    <p>CNPJ:(Somente números)<br>
+                        <input type="text" name="cnpj" id="cnpj"></p>
+                </form>
+            </section>
+        </article>
+    </div>
+
+   <!-- <script>
+        function mudouTamanho() {
+            if (window.innerWidth >=768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clickMenu() {
+            if(itens.style.display =='block'){
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+    </script> 
+    -->
+</body>
+</html>
